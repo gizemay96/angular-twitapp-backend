@@ -21,8 +21,16 @@
       "via": "posts"
     },
     "comments": {
-      "via": "post",
-      "collection": "comments"
+      "collection": "comments",
+      "via": "post"
+    },
+    "likeCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "retweetCount": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
