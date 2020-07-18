@@ -58,8 +58,19 @@
       "collection": "posts"
     },
     "comments": {
-      "via": "user",
-      "collection": "comments"
+      "collection": "comments",
+      "via": "user"
+    },
+    "profileImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

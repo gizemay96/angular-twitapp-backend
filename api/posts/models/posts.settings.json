@@ -31,6 +31,15 @@
     "retweetCount": {
       "type": "integer",
       "default": 0
+    },
+    "postImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
